@@ -1,13 +1,77 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+body{
+  display: flex;
+  justify-content: center;
+}
+.App{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+  margin: 2rem;
+  background-color: white;
+  box-shadow: 0 0 30px grey;
+  border-radius: 10px;
+  position: relative;
+
+}
+input{
+  width: 250px;
+  height: 35px;
+  padding: 0.5rem;
+  font-size: 16px;
+  border: 1px solid steelblue;
+  border-radius: 6px 0  0 6px ;
+  outline: none;
+  color: steelblue;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+input:focus{
+  box-shadow: 0 0 0 4px rgba(70, 131, 180, 0.452);
+}
+button{
+  height: 35px;
+  padding: 0.5rem;
+  border: 2px solid steelblue;
+  background: steelblue;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  border-radius: 0 6px  6px 0 ;
+  font-weight: 600;
+  color: white;
+}
+button:hover{
+  color: steelblue;
+  background: rgba(70, 131, 180, 0.2);
+}
+button:focus{
+  box-shadow: 0 0 0 4px rgba(70, 131, 180, 0.452);
+}
+.searchBar{
+  display: flex;
+  align-items: center;
+}
+img{
+  border-radius: 10px;
+  box-shadow: 0 0 10px grey;
+}
+.generatorContainer span{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  position: relative;
 }
